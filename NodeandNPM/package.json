@@ -1,0 +1,19 @@
+{
+  "name": "node-va-npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=development --entry=./src/index.js"
+  },
+  "author": "michael ha",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
