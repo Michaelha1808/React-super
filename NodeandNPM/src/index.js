@@ -1,2 +1,4 @@
 import sum from "./utils";
-console.log(sum(1,2));
+import './style/style.css'
+import './style/style.scss'
+console.log(sum(100,20));
