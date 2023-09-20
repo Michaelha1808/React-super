@@ -3,22 +3,14 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
-import Welcom from './Welcome'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
-const element = (
-  <div>
-    <Welcom name='Sara' age={20} />
-    <Welcom name='Helen' age={21} />
-    <Welcom name='Nicolas' age={22} />
-  </div>
+
+root.render(
+  <React.StrictMode> */
+    <App />
+  </React.StrictMode>
 )
-
-// <React.StrictMode> */
-// <App />
-// </React.StrictMode>
-
-root.render(element)
 // const element = <h1>Hello, world!</h1>
 
 

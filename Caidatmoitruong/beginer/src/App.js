@@ -1,25 +1,13 @@
-import logo from './logo.svg'
 import './App.css'
+import Clock from './Clock'
 
-const comment = `<script>console.log('send token')</script>`
 
 function App() {
 
   //*JSX
   return (
     <div className='App'>
-      <h1>Create by Michael ha</h1>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        {comment}
-        <h1>Hello</h1>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a className='App-link' href='https://reactjs.org' target='_blank' rel='noopener noreferrer'>
-          Learn React
-        </a>
-      </header>
+      <Clock />
     </div>
   )
 }
