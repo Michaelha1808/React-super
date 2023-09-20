@@ -8,11 +8,13 @@ export default class Clock extends React.Component {
       },
       seconds: {
         created: new Date().getSeconds()
-      }
+      },
+      name: this.props.name
     }
     this.date = '20/09/2023'
+    this.getTime = this.getTime.bind(this)
   }
-  getTime = () => {
+  getTime() {
     //! previousState.time !== newState.time
     //! previousState.time.created !== newState.time.created
 
@@ -26,9 +28,10 @@ export default class Clock extends React.Component {
     this.setState(newState)
   }
   render() {
+    console.log(this.props)
     return (
       <div>
-        <h1>Hello, world!</h1>
+        <h1>Hello, world! {this.state.name}</h1>
         <h2>It is {this.state.time.created}</h2>
         <h2>It is {this.state.seconds.created}</h2>
         <h3>It is {this.date}</h3>
