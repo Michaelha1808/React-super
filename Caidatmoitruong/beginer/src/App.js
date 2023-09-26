@@ -3,6 +3,7 @@ import './App.css'
 import Clock from './Clock'
 import BareInput from './BareInput'
 import Layout from './Layout'
+import BareButton from './BareButton'
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
       <Layout>
         <h1>Hello</h1>
         <BareInput type='password' value='100' autoFocus className='input-control' onChange={() => { }} />
-
+        <BareButton />
       </Layout>
     </div>
   )
