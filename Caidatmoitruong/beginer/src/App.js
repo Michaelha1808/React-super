@@ -4,6 +4,7 @@ import Clock from './Clock'
 import BareInput from './BareInput'
 import Layout from './Layout'
 import BareButton from './BareButton'
+import LoginControl from './LoginControl'
 
 
 function App() {
@@ -16,11 +17,13 @@ function App() {
       <button onClick={() => setVisible(false)} >Hide clock component</button>
 
       {visible && <Clock name={name} />} */}
-      <Layout>
+      {/* <Layout>
         <h1>Hello</h1>
         <BareInput type='password' value='100' autoFocus className='input-control' onChange={() => { }} />
         <BareButton />
-      </Layout>
+      </Layout> */}
+
+      <LoginControl hidden={false} />
     </div>
   )
 }
